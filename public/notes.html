@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes | Arpan</title>
+    <meta name="description" content="Download free notes prepared by Arpan." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <div class="brand">Arpan</div>
+        <nav>
+          <a href="/">Home</a>
+          <a href="/notes">Notes</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="notes-page">
+      <section class="section">
+        <div class="container notes-header">
+          <div>
+            <p class="section-tag">Resources</p>
+            <h1>Some study materials</h1>
+          </div>
+          <button id="refresh-notes" class="button primary">Refresh</button>
+        </div>
+
+        <div class="container notes-toolbar">
+          <input
+            id="notes-search"
+            type="search"
+            placeholder="Search notes by name..."
+            aria-label="Search notes by name"
+          />
+        </div>
+
+        <div class="container">
+          <div class="table-wrap">
+            <table class="notes-table">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Size</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="notes-table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 Arpan</p>
+        <a href="/">Back to Home</a>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
